@@ -143,3 +143,62 @@
  }
 
 .validationError {font-size: 0.9rem; color: red; margin-top: 4px;}
+
+/* --- Tasks report --- */
+.report-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin-top: 24px;
+}
+
+.report-card h2 {
+    margin-top: 0;
+    color: #1f3a5f;
+}
+
+.tasks-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background: #fff;
+}
+
+.tasks-report-table thead {
+    background-color: #1f3a5f;
+    color: #fff;
+}
+
+.tasks-report-table th,
+.tasks-report-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e6ea;
+}
+
+.tasks-report-table tbody tr:hover {
+    background-color: #f7f9fc;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-inprogress {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-done {
+    background-color: #d4edda;
+    color: #155724;
+}

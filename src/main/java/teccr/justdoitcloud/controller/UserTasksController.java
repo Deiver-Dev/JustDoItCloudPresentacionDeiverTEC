@@ -35,6 +35,12 @@ public class UserTasksController {
         return "usertasks";
     }
 
+    @GetMapping("/report")
+    public String showUserTasksReport(@ModelAttribute("user") User user, Model model) {
+        model.addAttribute("tasks", user.getTasks());
+        return "tasks-reports";
+    }
+
     @PostMapping
     public String addTask(@Valid @ModelAttribute(name = "newTask") Task newTask,
                           Errors errors,
@@ -47,4 +53,6 @@ public class UserTasksController {
         user.addTask(newTask);
         return "redirect:/user/tasks";
     }
+
+
 }
